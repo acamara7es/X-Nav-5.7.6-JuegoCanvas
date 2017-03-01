@@ -7,7 +7,7 @@
 var canvas, ctx;
 var direccionFijada;
 var imgArray, stoneArray, monsterArray;
-var killed, saved_state;
+var killed;
 var then, princessesCaught;
 
 const BG = 0; // Background image ID
@@ -222,7 +222,6 @@ function game() {
     stoneArray = [];
     monsterArray = [];
     killed = false;
-    saved_state = false;
 
     // Background image
     imgArray[BG] = generateImage("images/background.png");
@@ -240,16 +239,7 @@ function game() {
     imgArray[HERO].speed = 256; // movement in pixels per second
     princessesCaught = 0;
 
-    if (localStorage.getItem("load_saved_state") != null) {
-        saved_state = convertToBool(localStorage.getItem("load_saved_state"));
-        localStorage.setItem("load_saved_state", false);
-    }
-    if (saved_state) {
-        load_state();
-		saved_state = false;
-    } else {
-        reset();
-    }
+    reset();
     then = Date.now();
     //The setInterval() method will wait a specified number of milliseconds, and then execute a specified function, and it will continue to execute the function, once at every given time-interval.
     //Syntax: setInterval("javascript function",milliseconds);
