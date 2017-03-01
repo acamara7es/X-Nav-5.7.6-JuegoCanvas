@@ -18,7 +18,7 @@ Partiendo del juego sencillo anterior, realiza las siguientes modicaciones:
   - Cómo es el loop principal del juego.
 
 ## Resultado
-[http://acamara7es.github.io/X-Nav-5.7.6-JuegoCanvas/index.html](http://acamara7es.github.io/X-Nav-5.7.6-JuegoCanvas/index.html)
+[https://acamara7es.github.io/X-Nav-5.7.6-JuegoCanvas/index.html](https://acamara7es.github.io/X-Nav-5.7.6-JuegoCanvas/index.html)
 
 ## Comentarios y mejoras
 En lugar de cada 10 niveles, hay cambios más a menudo en el juego:
